@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(63, 63, 65);
+  }
+
+ nav-bar {
+   position: fixed;
+ }
+ 
+ #Video {
+  align-content: center;
+}
+
+form{
+  align-content: center;
+}
+  /* On screens that are 992px or less, set the background color to other gray */
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: rgb(157, 157, 196);
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to pink */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(206, 137, 180);
+    }
+  }

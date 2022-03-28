@@ -1,0 +1,19 @@
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+  }
+  #top {
+    background-color: red;
+  }
+  #bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+    /*observar que el skew se hace en el eje X y da un efecto de trapecio, sino colocamos la X  se sobre entiende que es el eje X*/
+    
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>

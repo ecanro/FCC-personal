@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>survey-form FCC</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form FCC</h1>
+    <div id="form-outer">
+
+        <p id="description">Pequeño Formulario con algunas cosas aprendidas en Freecodecamp</p>
+            <form action="https://crossorigin.me/https://freecodecamp.com" id="survey-form" method="GET">
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="name" id="name-label">
+                        * Su nombre:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Ingrese su nombre"
+                        required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="email" id="email-label">
+                        * Email:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Ingrese su Email"
+                        required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="age" id="number-label">
+                        * Edad:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" min="18" max="99" name="edad" id="number" class="input-field" placeholder="Edad">
+                </div>
+            </div>
+            <div class="rowtab">
+                <div class="labels">
+                    <label for="currentPos">
+                        Cual opcion describe mejor tu actual posicion?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <select name="currentPos" id="dropdown" class="dropdown">
+                        <option disable value>Seleccione una opcion</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trabajoFullTime">Trabajo full time</option>
+                        <option value="noTrabajo">No trabajo</option>
+                        <option value="aprendiendoFullTime">Estoy Aprendiendo a full time</option>
+                        <option value="preferNo">Prefiero no decir</option>
+                        <option value="other0">Otra</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRating">* ¿Qué tan probable es que recomiende freeCodeCamp a un amigo?</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label>Definitivamente!<input type="radio" name="radio-buttons" value="1" class="userRatings"></label>
+                        </li>
+                        <li class="radio">
+                            <label>Quizas<input type="radio" name="radio-buttons" value="2" class="userRatings"></label>
+                        </li>
+                        <li class="radio">
+                            <label>No estoy seguro<input type="radio" name="radio-buttons" value="3" class="userRatings"></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="most-like">Que es lo que mas te gusta de FCC:</label>
+                </div>
+                <div class="rightTab">
+                    <select name="meGusta" id="me-Gusta" class="dropdown">
+                        <option disable value>Seleccione una opcion</option>
+                        <option value="desafios">Desafios</option>
+                        <option value="projectos">Projectos</option>
+                        <option value="comunidad">Comunidad</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="preferencias">Cosas que deberían mejorarse en el futuro <br> (Marque todas las que
+                        aplique):</label>
+                </div>
+                <div class="rightTab">
+                    <ul id="preferencias" style="list-style:none">
+                        <li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Projectos
+                                de Front-End</label></li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="2" class="userRatings">Projectos
+                            de Back-End</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="3" class="userRatings">Data
+                            Visualization</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="4" class="userRatings">Desafios</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="5" class="userRatings">Comunidad
+                            Open Source</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="6" class="userRatings">Gitter
+                            helps rooms</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="7" class="userRatings">Videos</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="8" class="userRatings">Wiki</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="9" class="userRatings">Forum</li>
+                        <li class="checkbox"><input type="checkbox" name="prefer" value="10" class="userRatings">Cursos
+                            Adicionales</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comentarios">
+                        Algun otro comentario o sugerencia?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <textarea class="input-field" name="comentario" id="comentarios" style="height:50px;resize:vertical;"
+                        placeholder="Ingrese su comentario o sugerencia..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Enviar</button>
+    </div>
+    </form>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
